@@ -3,14 +3,10 @@
 class Main{
     public static void main(String[] args) {
         System.out.println("Hola Mundo");
-        Car car = new Car();
-        car.license="AMQ123";
-        car.driver ="Andres Herrera";
+        Car car = new Car("AMQ123",new Account("Andrea Herrera","AND123"));
         System.out.println("Car License: "+ car.license);
 
-        Car car2 = new Car();
-        car2.license="AMQ123";
-        car2.driver ="Andrea Herrera";
+        Car car2 = new Car("AMQ23",new Account("Andrea Herrera", "AMQ12339846"));
         System.out.println("Car License: "+ car2.license);
 
         car.printDataCar();
